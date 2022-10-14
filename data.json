@@ -1,0 +1,20 @@
+{
+    "My": {
+        "title":"1/6",
+        "pict":"sunmi.jpg",
+        "singer":"Sunmi",
+        "description":"She started the song with the thought, 'Can the weight of the heart be one-sixth on the moon where gravity is one-sixth?' It's a song with a cheerful city pop sound. The lyrics and vocals calmly unravel the emotions of Sunmi. It draws a lot of sympathy with the lyrics that represent modern people who constantly suffer from the weight and gravity of life."
+    },
+    "Favorite": {
+        "title":"eight",
+        "pict":"IU.jpgf",
+        "singer":"IU",
+        "description":"It's a heartbreaking song, but it's about wanting to remember the memories of people who left without saying hello until the end. She introduced the song, 'Eight,' as a short novel in which she confessed her 28 years of age using various metaphors with a fictional character called 'You.'"
+    },
+    "Songs": {
+        "title":"Youth",
+        "pict":"khaki.jpg",
+        "singer":"Khaki Hwang",
+        "description":"Producer Hwang Khaki's third single is catchy city-pop music."
+    },
+  }
