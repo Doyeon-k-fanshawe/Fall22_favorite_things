@@ -1,0 +1,76 @@
+/* Songs Section */
+#songs-section {
+  max-width: 500px;
+}
+
+#navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#navList li {
+	list-style-type: none;
+}
+
+.CDIcon img {
+  width: 80px;
+}
+
+.CDIcon {
+  margin: 0;
+  animation: rotation 3s linear infinite alternate;
+}
+
+.openBtn img {
+  width: 80px;
+  cursor: pointer;
+  animation: jump 0.6s linear infinite alternate;
+}
+
+@keyframes jump {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(-10px);}
+  100% { transform: translateY(0px);}
+}
+
+/* Slider Section */
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  width: 500px;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+}

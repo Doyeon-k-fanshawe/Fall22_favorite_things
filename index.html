@@ -20,19 +20,32 @@
 <body>
   <div id="all-favorite">
     <section id="intro-section">
-      <H2>My Favorite Thing is...</H2>
-      <p><span>Listening to Music</span> I enjoy listening
-        to almost all genres of music. 
-        However, there are three songs that I'm listening to these days.
-        I'm going to introduce it from now on!</p>
+      <div>
+        <H2>My Favorite Thing is...</H2>
+        <p><span>Listening to Music</span> I enjoy listening
+          to almost all genres of music. 
+          However, there are three songs that I'm listening to these days.
+          I'm going to introduce it from now on!</p>
+      </div>
+      <div class="songBox">
+        <audio class="audioBox">
+          <source id="audioSource" src="" />
+          Your browser does not support the audio format.
+        </audio>
+        <div class="songBtn">
+          <button class="stopBtn"><img src="images/music_pause.svg" alt="songBtn1"></button>
+          <button class="playBtn"><img src="images/song_2.svg" alt="songBtn2"></button>
+          <button class="nextBtn"><img src="images/next_music.svg" alt="songBtn3"></button>
+        </div>
+      </div>
     </section>
 
       <section id="songs-section">
         <nav id="slideButton">
           <ul id="navList">
-            <li><div class="heartIcon one" data-offset="0"><img src="images/heart.svg" alt="Heart Icon"></div></li>
-            <li><div class="heartIcon two" data-offset="1"><img src="images/heart.svg" alt="Heart Icon"></div></li>
-            <li><div class="heartIcon three" data-offset="2"><img src="images/heart.svg" alt="Heart Icon"></div></li>
+            <li><div class="CDIcon"><img src="images/cd_1.svg" alt="CD Icon"></div></li>
+            <li><div class="openBtn"><img src="images/cd_center.svg" alt="Heart Icon"></di></li>
+            <li><div class="CDIcon"><img src="images/cd_2.svg" alt="CD Icon"></div></li>
           </ul>
         </nav>
 
@@ -50,26 +63,26 @@
     </div>
     
       <div>
-        <section class="lightbox" id="lightbox">
-          <a href="#" class="close">X</a>
+        <section id="popInfo" class="popWrap">
+          <button type="button" class="btn_close">X</button>
+          <section id="love-section"></section>
         </section>
+
+          <!--template -->
+          <template id="bio-template">
+              <section class="bio_panel">
+                  <div class="pict">
+                    <img src="" alt="prog image">
+                  </div>
+                  <h2 class="s_title">slug</h2>
+                  <h3 class="s_singer">slug</h3>
+                  <p class="s_description">slug</p>
+              </section>
+          </template>
       </div>
 
     </section>
   
-    <section id="love-section"></section>
-
-    <!--template -->
-    <template id="bio-template">
-        <section class="bio_panel">
-            <div class="pict">
-              <img src="" alt="prog image">
-            </div>
-            <h2 class="s_title">slug</h2>
-            <h3 class="s_singer">slug</h3>
-            <p class="s_description">slug</p>
-        </section>
-    </template>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> -->
   <script src="js/main.js" type="module" defer></script>
