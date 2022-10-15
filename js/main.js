@@ -7,6 +7,55 @@ import { getData } from "./modules/dataMiner.js";
 
 (() => {
 
+  // Landing Page
+  let targetText = document.querySelector('#dynamic'),
+      noLanding = document.querySelector('.wrap');
+
+  function noLandingPage() {
+    noLanding.classList.add('landing');
+  }
+
+  noLanding.addEventListener('click', noLandingPage);
+
+  // rest Text
+  function randomString() {
+    let stringArr = ['My Favourite Things', 'My Favourite Songs', '1/6', 'eight', 'Youth'],
+        selectString = stringArr[Math.floor(Math.random() * stringArr.length)],
+        selectStringArr = selectString.split('');
+
+    return selectStringArr;
+  }
+
+  // typing reset
+  function resetTyping() {
+    targetText.textContent = "";
+    dynamic(randomString());
+  }
+
+  // Text
+  function dynamic(randomArr) {
+    if(randomArr.length > 0) {
+      targetText.textContent += randomArr.shift();
+      setTimeout(function() {
+        dynamic(randomArr);
+      }, 80);
+    } else {
+      setTimeout(resetTyping, 3000);
+    }
+  }
+
+  dynamic(randomString());
+
+  // Blink Function
+  function blink() {
+    targetText.classList.toggle('active');
+  }
+
+  setInterval(blink, 500);
+
+
+
+
   // audio
   const audioContainer = document.querySelector('.audioBox'),
         playBtn = document.querySelector('.playBtn'),
