@@ -3,7 +3,22 @@
   flex-direction: row;
   padding: 30px 100px;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 850px) {
+
+  #all-favorite {
+    display: flex;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+  }
+
+  .songBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
 }
 
 #intro-section {
@@ -11,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 270px;
 }
 
 #intro-section h2 {
@@ -26,7 +42,7 @@
 }
 
 #intro-section span:hover {
-  color: #304ffe;
+  color: #9e00c5;
   opacity: 100%;
   cursor: pointer;
 }
@@ -34,94 +50,24 @@
 #intro-section p {
   font-weight: 300;
   line-height: 25px;
+  margin-bottom: 50px;
 }
 
+// Play Audio Section
 
-/* Songs Section */
-#songs-section {
-  max-width: 500px;
-}
-
-#navList {
+.songBtn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 100px;
 }
 
-#navList li {
-	list-style-type: none;
-	cursor: pointer;
+.songBtn button {
+  background-color: #e1bee7;
 }
 
-.heartIcon img {
-  width: 80px;
+.songBtn img {
+  width: 50px;
+  height: 50px;
 }
 
-/* Slider Section */
-
-.container{
-  width: 500px;
-  height: 500px;
-  position: relative;
-  background-color: white;
-  overflow: hidden;
-}
-
-.slider{
-  display: flex;
-  position:absolute;
-  top: 0;
-  left: 0;
-}
-
-.item{
-  width: 500px;
-}
-
-
-.fade {
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.6;
-  }
-
-  to {
-    opacity: 1;
-  }
-  
-}
-
-
-
-
-.lightbox {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  align-items: center;
-  background-color: rgba(0, 0, 0, .7);
-}
-
-/* opened lightbox */
-.show-lightbox { display: block; }
-
-/* close button */
-.lightbox .close
-{
-  float: right;
-  padding-right: 30px;
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
-}

@@ -1,0 +1,76 @@
+.bio_panel {
+  margin: 120px 80px;
+}
+
+.pict {
+  display: inline-block;
+  margin-right: 50px;
+  float: left;
+}
+
+.pict img {
+  width: 500px;
+}
+
+.s_title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.s_singer {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 80px;
+}
+
+.s_description {
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 250px;
+}
+
+
+.popWrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100vw;
+  height: 1900px;
+
+  align-items: center;
+  background-color: #ffc4ff;
+}
+
+.show-popBox { 
+  display: block; 
+}
+
+.btn_close {
+  float: right;
+  padding-right: 30px;
+  padding-left: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  
+  .popWrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    width: 100vw;
+    height: 3500px;
+  
+    align-items: center;
+    background-color: #ffc4ff;
+  }
+}
