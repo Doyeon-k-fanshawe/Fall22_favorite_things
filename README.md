@@ -1,4 +1,4 @@
-# favourite Things
+# Favourite Things
 
 ## Project Requirements
 
